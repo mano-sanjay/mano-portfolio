@@ -586,3 +586,21 @@ nav a:hover {
     background: #79c0ff;
     transform: translate(-5px);
 }
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.footer p {
+    letter-spacing: 1px;
+}
+.footer span {
+    color: #58aeff;
+    font-weight: bold;
+}
