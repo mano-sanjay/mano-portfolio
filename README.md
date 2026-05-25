@@ -102,7 +102,7 @@ HatHno-D.Tech/
 ├── README.md
 ├── LICENSE
 └── favicon/
-
+'''
 🚀 Featured Projects
 🌐 Developer Portfolio
 
@@ -198,4 +198,4 @@ If you like this project:
 <div align="center">
 ⚡ “Code. Build. Learn. Repeat.” ⚡
 Built with passion by Mano C
-</div> ```
+</div> 
