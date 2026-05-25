@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Straw Hat Pirates - World's Best Crew</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* ====== BASE RESET & VARIABLES ====== */
+            :root {
+                --straw-hat-red: #B22222;
+                --straw-hat-yellow: #FFD700;
+                --straw-hat-blue: #1E90FF;
+                --straw-hat-black: #0A0A0A;
+                --straw-hat-white: #F5F5F5;
+                --pirate-gold: #D4AF37;
+                --sea-blue: #0F52BA;
+                --font-heading: 'Arial Black', 'Impact', sans-serif;
+                --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: var(--font-body);
+                background: linear-gradient(135deg, var(--straw-hat-black) 0%, var(--sea-blue) 100%);
+                color: var(--straw-hat-white);
+                min-height: 100vh;
+                padding: 20px;
+                position: relative;
+                overflow-x: hidden;
+            }
+            
+            /* ====== BACKGROUND ELEMENTS ====== */
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: 
+                    radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 20%),
+                    radial-gradient(circle at 90% 80%, rgba(178, 34, 34, 0.1) 0%, transparent 20%);
+                z-index: -1;
+            }
+            
+            .jolly-roger {
+                position: fixed;
+                top: 50px;
+                right: 50px;
+                width: 120px;
+                height: 120px;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="black"/><circle cx="50" cy="50" r="40" fill="white"/><path d="M50,20 L50,80 M20,50 L80,50" stroke="black" stroke-width="8"/><circle cx="50" cy="50" r="15" fill="black"/><circle cx="50" cy="50" r="10" fill="white"/></svg>');
+                opacity: 0.1;
+                z-index: -1;
+            }
+            
+            .jolly-roger-2 {
+                position: fixed;
+                bottom: 30px;
+                left: 30px;
+                width: 80px;
+                height: 80px;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="black"/><circle cx="50" cy="50" r="40" fill="white"/><path d="M50,20 L50,80 M20,50 L80,50" stroke="black" stroke-width="8"/><circle cx="50" cy="50" r="15" fill="black"/><circle cx="50" cy="50" r="10" fill="white"/></svg>');
+                opacity: 0.1;
+                z-index: -1;
+            }
+            
+            /* ====== MAIN TITLE ====== */
+            h1 {
+                text-align: center;
+                font-family: var(--font-heading);
+                font-size: 4rem;
+                color: var(--straw-hat-red);
+                text-shadow: 
+                    3px 3px 0 var(--straw-hat-black),
+                    6px 6px 0 rgba(255, 215, 0, 0.5);
+                margin: 40px 0 60px;
+                letter-spacing: 3px;
+                position: relative;
+                animation: titleGlow 3s infinite alternate;
+            }
+            
+            h1::before, h1::after {
+                content: "⚓";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 2.5rem;
+                opacity: 0.8;
+            }
+            
+            h1::before {
+                left: 10%;
+            }
+            
+            h1::after {
+                right: 10%;
+            }
+            
+            @keyframes titleGlow {
+                0% {
+                    text-shadow: 
+                        3px 3px 0 var(--straw-hat-black),
+                        6px 6px 0 rgba(255, 215, 0, 0.5);
+                }
+                100% {
+                    text-shadow: 
+                        3px 3px 0 var(--straw-hat-black),
+                        6px 6px 20px rgba(255, 215, 0, 0.8);
+                }
+            }
+            
+            /* ====== CREW MEMBERS SECTION ====== */
+            .crew-container {
+                max-width: 1200px;
+                margin: 0 auto 80px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 25px;
+                padding: 20px;
+            }
+            
+            h3 {
+                color: var(--straw-hat-yellow);
+                background: linear-gradient(90deg, rgba(178, 34, 34, 0.2) 0%, rgba(30, 144, 255, 0.2) 100%);
+                padding: 20px;
+                border-radius: 15px;
+                border-left: 5px solid var(--straw-hat-red);
+                font-size: 1.8rem;
+                margin: 0;
+                cursor: pointer;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            h3:hover {
+                transform: translateY(-10px) scale(1.03);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+                background: linear-gradient(90deg, rgba(178, 34, 34, 0.4) 0%, rgba(30, 144, 255, 0.4) 100%);
+                border-left: 5px solid var(--pirate-gold);
+                color: white;
+            }
+            
+            h3::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                transition: left 0.7s;
+            }
+            
+            h3:hover::before {
+                left: 100%;
+            }
+            
+            /* ====== INDIVIDUAL CREW MEMBER STYLES ====== */
+            h3:nth-child(1) { /* Luffy */
+                border-left-color: #B22222;
+            }
+            
+            h3:nth-child(2) { /* Zoro */
+                border-left-color: #2E8B57;
+            }
+            
+            h3:nth-child(3) { /* Nami */
+                border-left-color: #FF69B4;
+            }
+            
+            h3:nth-child(4) { /* Usopp */
+                border-left-color: #8B4513;
+            }
+            
+            h3:nth-child(5) { /* Sanji */
+                border-left-color: #FFD700;
+            }
+            
+            h3:nth-child(6) { /* Chopper */
+                border-left-color: #FF6347;
+            }
+            
+            h3:nth-child(7) { /* Robin */
+                border-left-color: #800080;
+            }
+            
+            h3:nth-child(8) { /* Franky */
+                border-left-color: #1E90FF;
+            }
+            
+            h3:nth-child(9) { /* Brook */
+                border-left-color: #708090;
+            }
+            
+            h3:nth-child(10) { /* Jinbe */
+                border-left-color: #20B2AA;
+            }
+            
+            /* ====== CREW ROLE BADGES ====== */
+            .crew-role {
+                font-size: 0.8rem;
+                background-color: var(--straw-hat-black);
+                color: var(--straw-hat-yellow);
+                padding: 5px 12px;
+                border-radius: 20px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                margin-left: 15px;
+                white-space: nowrap;
+                box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+            
+            /* ====== HOME LINK/BUTTON ====== */
+            a {
+                display: block;
+                width: 200px;
+                margin: 60px auto;
+                padding: 18px 30px;
+                background: linear-gradient(to right, var(--straw-hat-red), var(--pirate-gold));
+                color: var(--straw-hat-black);
+                text-decoration: none;
+                font-family: var(--font-heading);
+                font-size: 1.4rem;
+                text-align: center;
+                border-radius: 50px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+                position: relative;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                letter-spacing: 1px;
+                border: 3px solid transparent;
+                background-clip: padding-box;
+            }
+            
+            a::before {
+                content: "🏴‍☠️";
+                margin-right: 10px;
+            }
+            
+            a::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 50px;
+                padding: 3px;
+                background: linear-gradient(to right, var(--straw-hat-red), var(--pirate-gold));
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                z-index: -1;
+            }
+            
+            a:hover {
+                transform: translateY(-5px) scale(1.05);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+                letter-spacing: 2px;
+            }
+            
+            a:active {
+                transform: translateY(0) scale(0.98);
+            }
+            
+            /* ====== RESPONSIVE DESIGN ====== */
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 2.8rem;
+                    margin: 30px 0 40px;
+                }
+                
+                h1::before, h1::after {
+                    font-size: 1.8rem;
+                }
+                
+                .crew-container {
+                    grid-template-columns: 1fr;
+                    padding: 10px;
+                }
+                
+                h3 {
+                    font-size: 1.5rem;
+                    padding: 18px;
+                }
+                
+                .jolly-roger, .jolly-roger-2 {
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 2.2rem;
+                    margin: 20px 0 30px;
+                }
+                
+                h3 {
+                    font-size: 1.3rem;
+                    padding: 15px;
+                }
+                
+                a {
+                    width: 90%;
+                    font-size: 1.2rem;
+                }
+            }
+            
+            /* ====== ANIMATION FOR PAGE LOAD ====== */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            h1, h3, a {
+                animation: fadeInUp 0.8s ease forwards;
+            }
+            
+            h3:nth-child(1) { animation-delay: 0.1s; }
+            h3:nth-child(2) { animation-delay: 0.2s; }
+            h3:nth-child(3) { animation-delay: 0.3s; }
+            h3:nth-child(4) { animation-delay: 0.4s; }
+            h3:nth-child(5) { animation-delay: 0.5s; }
+            h3:nth-child(6) { animation-delay: 0.6s; }
+            h3:nth-child(7) { animation-delay: 0.7s; }
+            h3:nth-child(8) { animation-delay: 0.8s; }
+            h3:nth-child(9) { animation-delay: 0.9s; }
+            h3:nth-child(10) { animation-delay: 1.0s; }
+            a { animation-delay: 1.2s; }
+            
+            /* ====== FOOTER NOTE ====== */
+            .footer-note {
+                text-align: center;
+                margin-top: 50px;
+                padding: 20px;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 0.9rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="jolly-roger"></div>
+        <div class="jolly-roger-2"></div>
+        
+        <h1>STRAW HAT PIRATES</h1>
+        
+        <div class="crew-container">
+            <h3>Monkey D. Luffy <span class="crew-role">CAPTAIN</span></h3>
+            <h3>Roronoa Zoro <span class="crew-role">SWORDSMAN</span></h3>
+            <h3>Nami <span class="crew-role">NAVIGATOR</span></h3>
+            <h3>Usopp <span class="crew-role">SNIPER</span></h3>
+            <h3>Sanji <span class="crew-role">COOK</span></h3>
+            <h3>Tony Tony Chopper <span class="crew-role">DOCTOR</span></h3>
+            <h3>Nico Robin <span class="crew-role">ARCHAEOLOGIST</span></h3>
+            <h3>Franky <span class="crew-role">SHIPWRIGHT</span></h3>
+            <h3>Brook <span class="crew-role">MUSICIAN</span></h3>
+            <h3>Jinbe <span class="crew-role">HELMSMAN</span></h3>
+        </div>
+        
+        <a href="index.html">Home</a>
+        
+        <div class="footer-note">
+            The World's Greatest Pirates • Going to Laugh Tale
+        </div>
+    </body>
+</html>
