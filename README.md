@@ -34,15 +34,15 @@ Built with responsive layouts, animated UI effects, terminal-inspired design and
 
 This portfolio includes:
 
-✨ Animated Terminal Intro  
-✨ Responsive Sidebar Navigation  
-✨ Modern Dark UI  
-✨ Smooth Scrolling Sections  
-✨ Interactive Hover Effects  
-✨ Mobile Responsive Design  
-✨ Project Showcase Cards  
-✨ Contact & Social Integration  
-✨ Clean Developer Branding  
+- ✨ Animated Terminal Intro
+- ✨ Responsive Sidebar Navigation
+- ✨ Modern Dark UI
+- ✨ Smooth Scrolling Sections
+- ✨ Interactive Hover Effects
+- ✨ Mobile Responsive Design
+- ✨ Project Showcase Cards
+- ✨ Contact & Social Integration
+- ✨ Clean Developer Branding
 
 ---
 
@@ -102,100 +102,139 @@ HatHno-D.Tech/
 ├── README.md
 ├── LICENSE
 └── favicon/
-'''
-🚀 Featured Projects
-🌐 Developer Portfolio
+```
+
+---
+
+# 🚀 Featured Projects
+
+## 🌐 Developer Portfolio
 
 Modern responsive portfolio website with:
 
-terminal animation
-sidebar navigation
-futuristic UI
-mobile support
-📊 Daily Route Analyzer
+- terminal animation
+- sidebar navigation
+- futuristic UI
+- mobile support
+
+---
+
+## 📊 Daily Route Analyzer
 
 Offline productivity and route analysis application.
 
-Built Using:
-Flutter
-Python
-C Concepts
-Features:
-local data storage
-route analysis
-productivity tracking
-offline-first design
-💰 Smart Expense Tracker
+### Built Using:
+- Flutter
+- Python
+- C Concepts
+
+### Features:
+- local data storage
+- route analysis
+- productivity tracking
+- offline-first design
+
+---
+
+## 💰 Smart Expense Tracker
 
 Offline expense management application.
 
-Features:
-spending analysis
-budget tracking
-local device storage
-fast lightweight performance
-✨ UI Features
+### Features:
+- spending analysis
+- budget tracking
+- local device storage
+- fast lightweight performance
 
-✅ Animated Hover Effects
-✅ Gradient Borders
-✅ Interactive Sidebar
-✅ Responsive Layout
-✅ Smooth Navigation
-✅ Terminal Styled Interface
-✅ Dark Theme Design
-✅ Mobile Optimization
+---
 
-🔥 Future Goals
-AI integration
-Full backend system
-Authentication
-Deployment server
-Analytics dashboard
-API integrations
-Advanced animations
-🌍 SEO Keywords
+# ✨ UI Features
+
+- ✅ Animated Hover Effects
+- ✅ Gradient Borders
+- ✅ Interactive Sidebar
+- ✅ Responsive Layout
+- ✅ Smooth Navigation
+- ✅ Terminal Styled Interface
+- ✅ Dark Theme Design
+- ✅ Mobile Optimization
+
+---
+
+# 🔥 Future Goals
+
+- AI integration
+- Full backend system
+- Authentication
+- Deployment server
+- Analytics dashboard
+- API integrations
+- Advanced animations
+
+---
+
+# 🌍 SEO Keywords
 
 developer portfolio, Mano C portfolio, HatHno D.Tech, frontend developer portfolio, modern portfolio website, responsive portfolio, HTML CSS JavaScript portfolio, Linux portfolio website, Flutter developer portfolio, Python developer portfolio, cyber security portfolio, software developer portfolio
 
-📸 Screenshots
+---
+
+# 📸 Screenshots
 
 <img src="images/project1.png" width="100%"/>
 
-⚙️ Installation
+---
 
-Clone the repository:
+# ⚙️ Installation
 
+### Clone the repository:
+
+```bash
 git clone https://github.com/mano-sanjay/mano-portfolio.git
+```
 
-Open the project:
+### Open the project:
 
+```bash
 cd mano-portfolio
+```
 
-Run:
+### Run:
 
-Open index.html in browser
-📬 Contact
-📧 Email
+Open `index.html` in browser
+
+---
+
+# 📬 Contact
+
+## 📧 Email
 
 manosanjaymano@gmail.com
 
-💻 GitHub
+## 💻 GitHub
 
 https://github.com/mano-sanjay
 
-📱 WhatsApp
+## 📱 WhatsApp
 
 https://wa.me/919150788702
 
-⭐ Support The Project
+---
+
+# ⭐ Support The Project
 
 If you like this project:
 
-⭐ Star the repository
-🍴 Fork the repository
-🚀 Share with others
+- ⭐ Star the repository
+- 🍴 Fork the repository
+- 🚀 Share with others
+
+---
 
 <div align="center">
+
 ⚡ “Code. Build. Learn. Repeat.” ⚡
+
 Built with passion by Mano C
-</div> 
+
+</div>
