@@ -2,7 +2,7 @@
 
 <img src="images/logo.png" width="160"/>
 
-# ⚡ HatHno D.Tech ⚡
+# ⚡ Hathno Tech ⚡
 
 ### Modern Developer Portfolio • Linux • Python • Flutter • C
 
