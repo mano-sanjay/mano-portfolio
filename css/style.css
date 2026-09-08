@@ -460,6 +460,23 @@ nav a:hover {
     height: 150px;
     object-fit: cover;
 }
+.project2_images {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+    padding: 2px;
+    box-sizing: border-box;
+
+}
+
+.project2_images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
 .project-content {
     padding: 25px;
 }
