@@ -88,7 +88,7 @@ I enjoy creating efficient systems, exploring low-level concepts and turning ide
 # 📂 Project Structure
 
 ```bash
-HatHno-D.Tech/
+HatHno Tech /
 │
 ├── index.html
 ├── css/
@@ -175,7 +175,7 @@ Offline expense management application.
 
 # 🌍 SEO Keywords
 
-developer portfolio, Mano C portfolio, HatHno D.Tech, frontend developer portfolio, modern portfolio website, responsive portfolio, HTML CSS JavaScript portfolio, Linux portfolio website, Flutter developer portfolio, Python developer portfolio, cyber security portfolio, software developer portfolio
+developer portfolio, Mano C portfolio, HatHno Tech, frontend developer portfolio, modern portfolio website, responsive portfolio, HTML CSS JavaScript portfolio, Linux portfolio website, Flutter developer portfolio, Python developer portfolio, cyber security portfolio, software developer portfolio
 
 ---
 
